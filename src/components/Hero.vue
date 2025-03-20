@@ -16,7 +16,7 @@ const stats = [
   <!-- Hero Section with Background -->
    <div class="bg-[url('/src/assets/icons/Hero/BgHero.svg')] bg-no-repeat bg-center bg-cover">
   <section
-    class="container mx-auto flex flex-col lg:flex-row items-center lg: lg:mb-1 mt-40 gap-10 py-12"
+    class="container mx-auto flex flex-col lg:flex-row items-center xl:mt-52 lg:mt-40 lg:mb-1 mt-40 gap-10 py-12"
   >
     <!-- Left Content -->
     <div class="lg:w-full space-y-5 text-center lg:text-left">
@@ -69,7 +69,7 @@ const stats = [
     </div>
 
     <!-- Right Images -->
-    <div class="lg:w-1/2 lg:right-30 flex justify-center mx-auto mt-10 md:mt-10 relative">
+    <div class="lg:w-1/2 lg:right-33 flex justify-center lg:right-10 mx-auto mt-10 md:mt-16 relative">
       <!-- Small Image with Blue Circle -->
       <div
         class="absolute -top-6 right-2 md:-top-12 md:-right-12 lg:-top-20 lg:-right-10 w-[100px] md:w-[140px] lg:w-[160px] h-[100px] md:h-[140px] lg:h-[160px] rounded-full border-[6px] md:border-[8px] border-[#0B74BE] overflow-hidden"
@@ -84,7 +84,7 @@ const stats = [
       </div>
 
       <!-- Light Bulb Icon -->
-      <div class="absolute -top-18 right-14 md:-top-25 md:right-8 lg:-top-37 lg:right-12">
+      <div class="absolute -top-20 right-14 md:-top-32 md:right-8 lg:-top-40 lg:right-12">
         <img src="/src/assets/icons/Hero/BgLight.svg" alt="Light Bulb" class="w-20 md:w-28 lg:w-32 h-auto" />
       </div>
     </div>

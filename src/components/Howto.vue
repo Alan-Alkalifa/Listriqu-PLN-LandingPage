@@ -5,17 +5,17 @@ const isPlaying = ref(false);
 
 const cards = [
   {
-    image: "/src/assets/Icons/Howto/BgCard2.svg",
+    image: "/src/assets/Icons/Howto/Card-1.svg",
     title: "Unduh Aplikasi PLN Mobile",
     description: "Tersedia di Google Play & App Store. Masuk dan daftarkan diri di PLN Mobile."
   },
   {
-    image: "/src/assets/Icons/Howto/BgCard2.svg",
+    image: "/src/assets/Icons/Howto/Card-2.svg",
     title: "Pilih Sambung Baru LSP Plus",
     description: "Isi data form Pasang Baru sesuai dengan permohonan Anda."
   },
   {
-    image: "/src/assets/Icons/Howto/BgCard2.svg",
+    image: "/src/assets/Icons/Howto/Card-3.svg",
     title: "Teknisi Datang ke Lokasi Anda",
     description: "Teknisi bersertifikat siap membantu dengan layanan terbaik."
   }

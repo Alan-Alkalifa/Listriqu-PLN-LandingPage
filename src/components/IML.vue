@@ -58,7 +58,7 @@ const steps = ref([
       <h2 class="text-[#0B74BE] text-[24px] sm:text-[32px] md:text-[36px] font-bold">4 Langkah Proses Pemasangan IML</h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ">
       <div v-for="(step, index) in steps" :key="index" class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 flex flex-col ">
         <img :src="step.image" alt="Step Image" class=" mb-4" />
         <div class="flex text-left gap-2">
