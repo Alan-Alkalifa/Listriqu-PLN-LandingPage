@@ -53,7 +53,7 @@ const steps = ref([
       </p>
     </div>
 
-    <section class="w-full mx-auto py-12 px-6 justify-center">
+    <section class="container mx-auto py-12 justify-center">
     <div class="text-center">
       <h2 class="text-[#0B74BE] text-[24px] sm:text-[32px] md:text-[36px] font-bold">4 Langkah Proses Pemasangan IML</h2>
     </div>
