@@ -1,27 +1,27 @@
 <script setup lang="ts">
 const services = [
   {
-    icon: '/src/assets/Icons/Services/IconInstalasiListrik.svg',
+    icon: new URL('/public/icons/Services/IconInstalasiListrik.svg', import.meta.url).href,
     title: 'Instalasi Listrik',
     description: 'Pemasangan listrik baru di rumah atau bisnis Anda',
   },
   {
-    icon: '/src/assets/Icons/Services/IconPerbaikanListrik.svg',
+    icon: new URL('/public/icons/Services/IconPerbaikanListrik.svg', import.meta.url).href,
     title: 'Perbaikan Listrik',
     description: 'Solusi cepat untuk gangguan listrik',
   },
   {
-    icon: '/src/assets/Icons/Services/IconPemeriksaan.svg',
+    icon: new URL('/public/icons/Services/IconPemeriksaan.svg', import.meta.url).href,
     title: 'Pemeriksaan & Konsultasi',
     description: 'Cek keamanan dan efisiensi listrik di rumah',
   },
   {
-    icon: '/src/assets/Icons/Services/IconBilling.svg',
+    icon: new URL('/public/icons/Services/IconBilling.svg', import.meta.url).href,
     title: 'Billing & Pembayaran',
     description: 'Kemudahan pembayaran tagihan listrik',
   },
   {
-    icon: '/src/assets/Icons/Services/IconTambahDaya.svg',
+    icon: new URL('/public/icons/Services/IconTambahDaya.svg', import.meta.url).href,
     title: 'Tambah Daya',
     description: 'Upgrade daya listrik sesuai kebutuhan Anda',
   },
@@ -39,7 +39,7 @@ const services = [
 
   <!-- Foreground Icon and Text -->
   <div class="relative flex items-center gap-2 sm:gap-4">
-    <img src="/src/assets/icons/About/IconLISTRIQU.svg" alt="LAYANAN KAMI Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
+    <img src="/public/icons/About/IconLISTRIQU.svg" alt="LAYANAN KAMI Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
     <h2 class="text-[#0B74BE] text-[28px] sm:text-[32px] md:text-[36px] font-bold">Layanan Kami</h2>
   </div>
 </section>

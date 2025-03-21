@@ -1,10 +1,11 @@
 <script setup lang="ts">
 const features = [
-  { icon: "/src/assets/icons/Hero/IconCustomers.svg", title: "Area Layanan Nasional" },
-  { icon: "/src/assets/icons/Hero/IconCertifiedTechnician.svg", title: "Penanganan 24 Jam" },
-  { icon: "/src/assets/icons/Hero/IconFastService.svg", title: "Layanan Konsultasi" },
-  { icon: "/src/assets/icons/Hero/IconTechnicians.svg", title: "Teknisi Bersertifikat" },
+  { icon: new URL('/public/icons/Hero/IconCustomers.svg', import.meta.url).href, title: "Area Layanan Nasional" },
+  { icon: new URL('/public/icons/Hero/IconCertifiedTechnician.svg', import.meta.url).href, title: "Penanganan 24 Jam" },
+  { icon: new URL('/public/icons/Hero/IconFastService.svg', import.meta.url).href, title: "Layanan Konsultasi" },
+  { icon: new URL('/public/icons/Hero/IconTechnicians.svg', import.meta.url).href, title: "Teknisi Bersertifikat" },
 ];
+
 
 const stats = [
   { value: "200.000+", title: "Work Order" },
@@ -14,7 +15,7 @@ const stats = [
 ];
 </script><template>
   <!-- Hero Section with Background -->
-   <div class="bg-[url('/src/assets/icons/Hero/BgHero.svg')] bg-no-repeat bg-center bg-cover">
+   <div class="bg-[url('/public/icons/Hero/BgHero.svg')] bg-no-repeat bg-center bg-cover">
   <section
     class="container mx-auto flex flex-col lg:flex-row items-center xl:mt-52 lg:mt-40 lg:mb-1 mt-40 gap-10 py-12"
   >
@@ -44,7 +45,7 @@ const stats = [
           class="px-6 md:px-9 py-3 bg-[#0B74BE] text-white rounded-full font-semibold shadow-lg flex items-center gap-2 hover:bg-[#094F7A] transition"
         >
           Daftar
-          <span class="flex items-center justify-center w-6 h-6  border-2 border-[#0B74BE] text-[#0B74BE] rounded-full font-extrabold"><img src="/src/assets/icons/Hero/ButtonRight1.svg"></span>
+          <span class="flex items-center justify-center w-6 h-6  border-2 border-[#0B74BE] text-[#0B74BE] rounded-full font-extrabold"><img src="/public/icons/Hero/ButtonRight1.svg"></span>
         </button>
 
         <!-- Outline Button -->
@@ -54,11 +55,11 @@ const stats = [
           Detail
           <span class="flex items-center justify-center w-6 h-6">
     <img 
-      src="/src/assets/icons/Hero/ButtonRight2.svg" 
+      src="/public/icons/Hero/ButtonRight2.svg" 
       class="group-hover:hidden"
     >
     <img 
-      src="/src/assets/icons/Hero/ButtonRight1.svg" 
+      src="/public/icons/Hero/ButtonRight1.svg" 
       class="hidden group-hover:block"
     >
   </span>
@@ -74,18 +75,18 @@ const stats = [
       <div
         class="absolute -top-6 right-2 md:-top-12 md:-right-12 lg:-top-20 lg:-right-10 w-[100px] md:w-[140px] lg:w-[160px] h-[100px] md:h-[140px] lg:h-[160px] rounded-full border-[6px] md:border-[8px] border-[#0B74BE] overflow-hidden"
       >
-        <img src="/src/assets/icons/Hero/BgSecondary.svg" alt="Technician" class="w-full h-auto object-cover" />
+        <img src="/public/icons/Hero/BgSecondary.svg" alt="Technician" class="w-full h-auto object-cover" />
       </div>
 
       <div
         class="relative w-[90%] md:w-[350px] lg:w-[400px] max-w-full h-auto rounded-full border-[8px] md:border-[12px] lg:border-[10px] border-white overflow-hidden"
       >
-        <img src="/src/assets/icons/Hero/BgMain.svg" alt="Technicians" class="fill-[#0B74BE] w-full rounded-full border-[18px] border-[#FAB700] h-auto object-cover" />
+        <img src="/public/icons/Hero/BgMain.svg" alt="Technicians" class="fill-[#0B74BE] w-full rounded-full border-[18px] border-[#FAB700] h-auto object-cover" />
       </div>
 
       <!-- Light Bulb Icon -->
       <div class="absolute -top-20 right-14 md:-top-32 md:right-8 lg:-top-40 lg:right-12">
-        <img src="/src/assets/icons/Hero/BgLight.svg" alt="Light Bulb" class="w-20 md:w-28 lg:w-32 h-auto" />
+        <img src="/public/icons/Hero/BgLight.svg" alt="Light Bulb" class="w-20 md:w-28 lg:w-32 h-auto" />
       </div>
     </div>
   </section>

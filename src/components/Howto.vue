@@ -5,21 +5,22 @@ const isPlaying = ref(false);
 
 const cards = [
   {
-    image: "/src/assets/Icons/Howto/Card-1.svg",
+    image: new URL('/public/icons/Howto/Card-1.svg', import.meta.url).href,
     title: "Unduh Aplikasi PLN Mobile",
     description: "Tersedia di Google Play & App Store. Masuk dan daftarkan diri di PLN Mobile."
   },
   {
-    image: "/src/assets/Icons/Howto/Card-2.svg",
+    image: new URL('/public/icons/Howto/Card-2.svg', import.meta.url).href,
     title: "Pilih Sambung Baru LSP Plus",
     description: "Isi data form Pasang Baru sesuai dengan permohonan Anda."
   },
   {
-    image: "/src/assets/Icons/Howto/Card-3.svg",
+    image: new URL('/public/icons/Howto/Card-3.svg', import.meta.url).href,
     title: "Teknisi Datang ke Lokasi Anda",
     description: "Teknisi bersertifikat siap membantu dengan layanan terbaik."
   }
 ];
+
 </script>
 
 <template>
@@ -34,7 +35,7 @@ const cards = [
 
   <!-- Foreground Icon and Text -->
   <div class="relative flex items-center gap-2 sm:gap-4">
-    <img src="/src/assets/icons/About/IconLISTRIQU.svg" alt="Tentang Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
+    <img src="/public/icons/About/IconLISTRIQU.svg" alt="Tentang Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
     <h2 class="text-[#0B74BE] text-[24px] sm:text-[32px] md:text-[36px] font-bold">Sambung Baru LSP Plus</h2>
   </div>
 </section>
@@ -83,9 +84,9 @@ const cards = [
     <div class="relative w-full max-w-7xl mx-auto mt-12">
       <h3 class="text-[#696F8C] text-center font-medium text-[16px] my-2">Simak video tutorial dibawah ini:</h3>
       <div v-if="!isPlaying" class="relative">
-        <img src="/src/assets/Icons/Howto/BgVideo.svg" alt="Video Thumbnail" class="w-full rounded-lg shadow-lg" />
+        <img src="/public/icons/Howto/BgVideo.svg" alt="Video Thumbnail" class="w-full rounded-lg shadow-lg" />
         <button @click="isPlaying = true" class="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-          <img src="/src/assets/Icons/Howto/IconButtonPlay.svg" alt="Play" width="120" height="120" />
+          <img src="/public/icons/Howto/IconButtonPlay.svg" alt="Play" width="120" height="120" />
         </button>
       </div>
 

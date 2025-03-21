@@ -19,7 +19,7 @@ const selectLanguage = (lang: string) => {
     
     <!-- Emergency Contact (Tetap di atas di layar kecil) -->
     <div class="flex items-center gap-2 text-center md:text-left mb-2 md:mb-0">
-      <img src="/src/assets/icons/Navbar/IconEmergencyCall1.svg" alt="Emergency" width="20" height="20" />
+      <img src="/public/icons/Navbar/IconEmergencyCall1.svg" alt="Emergency" width="20" height="20" />
       <a class="font-normal" href="#">Emergency: <span class="font-semibold">Contact Center PLN 123</span></a>
     </div>
 
@@ -28,7 +28,7 @@ const selectLanguage = (lang: string) => {
       
       <!-- Email -->
       <div class="flex items-center gap-2">
-        <img src="/src/assets/icons/Navbar/IconMail.svg" alt="Mail" width="20" height="20" />
+        <img src="/public/icons/Navbar/IconMail.svg" alt="Mail" width="20" height="20" />
         <a class="font-medium" href="mailto:listriqu@iconpln.co.id">listriqu@iconpln.co.id</a>
       </div>
 
@@ -37,7 +37,7 @@ const selectLanguage = (lang: string) => {
 
       <!-- Phone Number -->
       <div class="flex items-center gap-2">
-        <img src="/src/assets/icons/Navbar/IconPhoneCall.svg" alt="Phone Call" width="20" height="20" />
+        <img src="/public/icons/Navbar/IconPhoneCall.svg" alt="Phone Call" width="20" height="20" />
         <a class="font-medium" href="tel:081230000572">08123 0000 572</a>
       </div>
 
@@ -46,7 +46,7 @@ const selectLanguage = (lang: string) => {
 
       <!-- 24-Hour Call Center -->
       <div class="flex items-center gap-2">
-        <img src="/src/assets/icons/Navbar/IconClock.svg" alt="24 Hour Service" width="20" height="20" />
+        <img src="/public/icons/Navbar/IconClock.svg" alt="24 Hour Service" width="20" height="20" />
         <a class="font-medium" href="#">Call Center 24 Jam</a>
       </div>
 
@@ -60,12 +60,12 @@ const selectLanguage = (lang: string) => {
     <section class="border-b-2 border-[#EDEFF5] w-full">
       <nav class="container mx-auto flex justify-between items-center h-16 px-4">
         <a href="#" class="flex-shrink-0">
-          <img src="/src/assets/icons/Navbar/LogoListriqu.svg" alt="Listriqu Logo" width="145" height="40" />
+          <img src="/public/icons/Navbar/LogoListriqu.svg" alt="Listriqu Logo" width="145" height="40" />
         </a>
 
         <!-- Mobile Menu Button -->
         <button class="md:hidden text-[#0B74BE]" @click="isMenuOpen = !isMenuOpen">
-          <img src="/src/assets/icons/Navbar/IconMenu.svg" alt="Menu" width="32" height="32" />
+          <img src="/public/icons/Navbar/IconMenu.svg" alt="Menu" width="32" height="32" />
         </button>
 
         <!-- Desktop Menu -->
@@ -81,9 +81,9 @@ const selectLanguage = (lang: string) => {
         <!-- Language Selector -->
         <div class="relative hidden md:block">
           <button class="hidden items-center gap-2" @click="isDropdownOpen = !isDropdownOpen">
-            <img src="/src/assets/icons/Navbar/IconLanguage.svg" alt="Language" width="24" height="24" />
+            <img src="/public/icons/Navbar/IconLanguage.svg" alt="Language" width="24" height="24" />
             <span class="text-[#696F8C]">{{ selectedLanguage }}</span>
-            <img src="/src/assets/icons/Navbar/IconDropdown.svg" alt="Dropdown" width="16" height="16" />
+            <img src="/public/icons/Navbar/IconDropdown.svg" alt="Dropdown" width="16" height="16" />
           </button>
           <ul v-if="isDropdownOpen" class="absolute right-0 mt-2 bg-white text-black shadow-lg rounded-md w-32 py-2">
             <li><a href="#" class="block px-4 py-2 hover:bg-gray-200" @click="selectLanguage('ID')">ID</a></li>
@@ -103,9 +103,9 @@ const selectLanguage = (lang: string) => {
           <li><a href="#" class="hover:text-[#0B74BE] font-medium">Bantuan</a></li>
           <li class="hidden invisible">
             <button class="flex items-center justify-center gap-2 w-full text-[#696F8C]" @click="isDropdownOpen = !isDropdownOpen">
-              <img src="/src/assets/icons/Navbar/IconLanguage.svg" alt="Language" width="24" height="24" />
+              <img src="/public/icons/Navbar/IconLanguage.svg" alt="Language" width="24" height="24" />
               <span>{{ selectedLanguage }}</span>
-              <img src="/src/assets/icons/Navbar/IconDropdown.svg" alt="Dropdown" width="16" height="16" />
+              <img src="/public/icons/Navbar/IconDropdown.svg" alt="Dropdown" width="16" height="16" />
             </button>
             <ul v-if="isDropdownOpen" class="mt-2 bg-white text-black shadow-lg rounded-md w-32 mx-auto py-2">
               <li><a href="#" class="block px-4 py-2 hover:bg-gray-200" @click="selectLanguage('ID')">ID</a></li>

@@ -1,45 +1,45 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-// Data Testimoni
 const allTestimonials = ref([
   {
     name: "Mila McSabbu",
     role: "Freelance Designer",
-    image: "/src/assets/icons/Testimoni/User1.svg",
+    image: new URL('/public/icons/Testimoni/User1.svg', import.meta.url).href,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     name: "Robert Fox",
     role: "Freelance Designer",
-    image: "/src/assets/icons/Testimoni/User2.svg",
+    image: new URL('/public/icons/Testimoni/User2.svg', import.meta.url).href,
     text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     name: "Jenny Wilson",
     role: "Freelance Designer",
-    image: "/src/assets/icons/Testimoni/User3.svg",
+    image: new URL('/public/icons/Testimoni/User3.svg', import.meta.url).href,
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     name: "David Anderson",
     role: "Product Manager",
-    image: "/src/assets/icons/Testimoni/User1.svg",
+    image: new URL('/public/icons/Testimoni/User1.svg', import.meta.url).href,
     text: "I had a fantastic experience with ListriQu! Their team was very professional and efficient.",
   },
   {
     name: "Emily Roberts",
     role: "Software Engineer",
-    image: "/src/assets/icons/Testimoni/User2.svg",
+    image: new URL('/public/icons/Testimoni/User2.svg', import.meta.url).href,
     text: "ListriQu made my home feel safe with their excellent electrical service. Highly recommend them!",
   },
   {
     name: "John Doe",
     role: "Business Owner",
-    image: "/src/assets/icons/Testimoni/User3.svg",
+    image: new URL('/public/icons/Testimoni/User3.svg', import.meta.url).href,
     text: "Top-notch service! Quick response and skilled technicians made my experience seamless.",
   },
 ]);
+
 
 const visibleTestimonials = ref(allTestimonials.value.slice(0, 3)); // Menampilkan 3 data pertama
 let startIndex = 0;
@@ -59,7 +59,7 @@ const prevTestimonials = () => {
 
 <template>
   <section class="bg-[#004F87] py-12 w-full">
-    <div class="container mx-auto bg-[url('/src/assets/icons/Testimoni/BgTestimoni.svg')] bg-no-repeat bg-auto bg-right-top">
+    <div class="container mx-auto bg-[url('/public/icons/Testimoni/BgTestimoni.svg')] bg-no-repeat bg-auto bg-right-top">
       <!-- Badge -->
       <span class="bg-[#0075E3] text-white text-[16px] font-semibold px-4 py-2 rounded-full inline-block">
         TESTIMONI PELANGGAN
@@ -72,11 +72,11 @@ const prevTestimonials = () => {
         <div class="flex gap-2">
           <button @click="prevTestimonials"
             class="w-10 h-10 rounded-full bg-[#B0C4DE] flex items-center text-center justify-center hover:bg-[#94B2D4] transition">
-            <img src="/src/assets/icons/Testimoni/ButtonLeft.svg" alt="Left Arrow">
+            <img src="/public/icons/Testimoni/ButtonLeft.svg" alt="Left Arrow">
           </button>
           <button @click="nextTestimonials"
             class="w-10 h-10 rounded-full bg-[#FAB700] flex items-center text-center justify-center hover:bg-[#E5A500] transition">
-            <img src="/src/assets/icons/Testimoni/ButtonRight.svg" alt="Right Arrow">
+            <img src="/public/icons/Testimoni/ButtonRight.svg" alt="Right Arrow">
           </button>
         </div>
       </div>

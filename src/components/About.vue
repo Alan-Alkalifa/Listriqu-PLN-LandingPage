@@ -11,7 +11,7 @@
         </h1>
         <div class="relative flex items-center gap-2 sm:gap-4">
           <img
-            src="/src/assets/icons/About/IconLISTRIQU.svg"
+            src="/public/icons/About/IconLISTRIQU.svg"
             alt="Tentang Icon"
             width="24"
             height="30"
@@ -35,7 +35,7 @@
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <div class="bg-[#E9F6FF] rounded-full w-12 h-12 flex items-center justify-center">
-                <img src="/src/assets/icons/About/IconCustomers.svg" alt="Customers" class="w-6 h-6 object-contain" />
+                <img src="/public/icons/About/IconCustomers.svg" alt="Customers" class="w-6 h-6 object-contain" />
               </div>
               <span class="text-[#004F87] font-semibold text-[18px]">100.000+ pelanggan puas</span>
             </div>
@@ -43,7 +43,7 @@
             <div class="flex items-center gap-3">
               <div class="bg-[#E9F6FF] rounded-full w-12 h-12 flex items-center justify-center">
                 <img
-                  src="/src/assets/icons/About/IconCertifiedTechnician.svg"
+                  src="/public/icons/About/IconCertifiedTechnician.svg"
                   alt="Technician"
                   class="w-6 h-6 object-contain"
                 />
@@ -53,7 +53,7 @@
 
             <div class="flex items-center gap-3">
               <div class="bg-[#E9F6FF] rounded-full w-12 h-12 flex items-center justify-center">
-                <img src="/src/assets/icons/About/IconFastService.svg" alt="Fast Service" class="w-6 h-6 object-contain" />
+                <img src="/public/icons/About/IconFastService.svg" alt="Fast Service" class="w-6 h-6 object-contain" />
               </div>
               <span class="text-[#004F87] font-semibold text-[18px]">Layanan Cepat & Harga Transparan</span>
             </div>
@@ -68,7 +68,7 @@
         <!-- Main Image (Technician Riding) -->
         <div class="relative w-2/3 max-w-[300px] sm:max-w-[350px] md:max-w-[400px] z-30">
           <img
-            src="/src/assets/Icons/About/BgTechnicianMain.svg"
+            src="/public/icons/About/BgTechnicianMain.svg"
             alt="Technician Main"
             class="rounded-full w-full h-full object-cover border-4 border-white shadow-lg"
           />
@@ -77,7 +77,7 @@
         <!-- Technician Working (Bottom Right) -->
         <div class="absolute bottom-[-10%] right-[-10%] sm:bottom-[-20px] sm:right-[-40px] border-4 border-white rounded-full shadow-md z-20 w-32 h-32 sm:w-48 sm:h-48">
           <img
-            src="/src/assets/Icons/About/BgTechnicianWorking.svg"
+            src="/public/icons/About/BgTechnicianWorking.svg"
             alt="Technician Working"
             class="w-full h-full rounded-full object-cover"
           />
@@ -86,7 +86,7 @@
         <!-- PLN Mobile Logo (Top Right) -->
         <div class="absolute top-2 right-0 sm:-top-2 sm:right-4 w-16 h-16 sm:w-24 sm:h-24 rounded-full shadow-md z-40">
           <img
-            src="/src/assets/Icons/About/BgPlnMobile.svg"
+            src="/public/icons/About/BgPlnMobile.svg"
             alt="PLN Mobile"
             class="w-full h-full rounded-full object-cover"
           />

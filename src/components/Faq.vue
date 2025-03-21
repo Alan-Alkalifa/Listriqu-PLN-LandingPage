@@ -26,7 +26,7 @@ const toggleFAQ = (index: number) => {
 
       <!-- Foreground Icon and Text -->
       <div class="relative flex items-center gap-2 sm:gap-4">
-        <img src="/src/assets/icons/About/IconLISTRIQU.svg" alt="LAYANAN KAMI Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
+        <img src="/public/icons/About/IconLISTRIQU.svg" alt="LAYANAN KAMI Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
         <h2 class="text-[#0B74BE] text-[28px] sm:text-[32px] md:text-[36px] font-bold">Frequently Asked Questions</h2>
       </div>
     </section>
@@ -50,8 +50,8 @@ const toggleFAQ = (index: number) => {
           <button @click="toggleFAQ(index)" class="w-full text-left flex items-center justify-between px-6 py-4 bg-[#E9F6FF] text-[#004F87] font-normal text-[18px] rounded-full">
             {{ faq.question }}
             <span>
-              <img v-if="faq.isOpen" src="/src/assets/icons/Faq/IconArrowUp.svg" alt="Collapse" />
-              <img v-else src="/src/assets/icons/Faq/IconArrowDown.svg" alt="Expand" />
+              <img v-if="faq.isOpen" src="/public/icons/Faq/IconArrowUp.svg" alt="Collapse" />
+              <img v-else src="/public/icons/Faq/IconArrowDown.svg" alt="Expand" />
             </span>
           </button>
           <div v-if="faq.isOpen" class="px-6 py-2 text-[#696F8C] bg-white rounded-lg shadow-md">
@@ -67,7 +67,7 @@ const toggleFAQ = (index: number) => {
 
       <!-- Image (Hidden on Mobile, Visible on Desktop) -->
       <div class="hidden lg:flex justify-center">
-        <img src="/src/assets/icons/Faq/BgRight.svg" alt="FAQ Background Image" class="max-w-sm lg:max-w-md xl:max-w-lg">
+        <img src="/public/icons/Faq/BgRight.svg" alt="FAQ Background Image" class="max-w-sm lg:max-w-md xl:max-w-lg">
       </div>
     </div>
   </div>

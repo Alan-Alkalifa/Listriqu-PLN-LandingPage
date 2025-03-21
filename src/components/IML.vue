@@ -1,28 +1,30 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+
+import { ref } from "vue";
 
 const steps = ref([
   {
-    image: '/src/assets/icons/IMS/Step-1.svg',
+    image: new URL('/public/icons/IMS/Step-1.svg', import.meta.url).href,
     title: 'Pilih instalatir',
     description: 'Pilih instalatir yang kompeten dan memiliki sertifikat akreditasi.'
   },
   {
-    image: '/src/assets/icons/IMS/Step-2.svg',
+    image: new URL('/public/icons/IMS/Step-2.svg', import.meta.url).href,
     title: 'Pasang IML',
     description: 'Pasang IML sesuai dengan standar teknis kelistrikan.'
   },
   {
-    image: '/src/assets/icons/IMS/Step-3.svg',
+    image: new URL('/public/icons/IMS/Step-3.svg', import.meta.url).href,
     title: 'Ajukan Permohonan SLO',
     description: 'Ajukan permohonan Sertifikat Laik Operasi (SLO) ke LIT yang ditunjuk pemerintah.'
   },
   {
-    image: '/src/assets/icons/IMS/Step-4.svg',
+    image: new URL('/public/icons/IMS/Step-4.svg', import.meta.url).href,
     title: 'Ajukan Permohonan ke PLN',
     description: 'Setelah SLO diterbitkan, ajukan permohonan penyambungan ke PLN.'
   }
 ]);
+
 </script>
 
 <template>
@@ -37,7 +39,7 @@ const steps = ref([
 
   <!-- Foreground Icon and Text -->
   <div class="relative flex items-center gap-2 sm:gap-4">
-    <img src="/src/assets/icons/About/IconLISTRIQU.svg" alt="Tentang Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
+    <img src="/public/icons/About/IconLISTRIQU.svg" alt="Tentang Icon" width="24" height="30" class="sm:w-7 sm:h-9 md:w-8 md:h-10" />
     <h2 class="text-[#0B74BE] text-[24px] sm:text-[32px] md:text-[36px] font-bold">Instalasi Milik Langganan (IML)</h2>
   </div>
 </section>

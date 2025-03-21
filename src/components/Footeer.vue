@@ -4,7 +4,7 @@
 <template>
   <footer class="bg-[#0B74BE] border-t-8 border-[#FFC107] text-white py-12">
     <div class="container mx-auto px-6 flex flex-wrap justify-between my-10">
-      <img src="/src/assets/icons/Footer/IconLogo.svg" alt="Logo">
+      <img src="/public/icons/Footer/IconLogo.svg" alt="Logo">
     </div>
 
     <div class="container mx-auto items-center px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -68,10 +68,10 @@
     <div class="border-t border-white mt-8 pt-4 flex flex-col md:flex-row items-center justify-between text-sm text-white/80 px-6 max-w-6xl mx-auto">
       <p class="text-normal text-[14px]">© Copyright 2025, All Rights Reserved</p>
       <div class="flex gap-4 mt-4 md:mt-0">
-        <a href="#"><img src="/src/assets/Icons/Footer/twitter.svg" alt="Twitter" class="w-5 h-5"></a>
-        <a href="#"><img src="/src/assets/Icons/Footer/facebook.svg" alt="Facebook" class="w-5 h-5"></a>
-        <a href="#"><img src="/src/assets/Icons/Footer/instagram.svg" alt="Instagram" class="w-5 h-5"></a>
-        <a href="#"><img src="/src/assets/Icons/Footer/github.svg" alt="Github" class="w-5 h-5"></a>
+        <a href="#"><img src="/public/icons/Footer/twitter.svg" alt="Twitter" class="w-5 h-5"></a>
+        <a href="#"><img src="/public/icons/Footer/facebook.svg" alt="Facebook" class="w-5 h-5"></a>
+        <a href="#"><img src="/public/icons/Footer/instagram.svg" alt="Instagram" class="w-5 h-5"></a>
+        <a href="#"><img src="/public/icons/Footer/github.svg" alt="Github" class="w-5 h-5"></a>
       </div>
     </div>
   </footer>
