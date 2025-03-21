@@ -2,9 +2,6 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "types": ["node"],
-    "module": "es2020",
-    "target": "es2020",
 
     /* Linting */
     "strict": true,
